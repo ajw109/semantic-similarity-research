@@ -62,32 +62,49 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 
 ## Usage
 
-### Running STS Benchmark Evaluation
+### Dataset Information
 
-The main evaluation script tests models on the STS Benchmark dataset:
+The evaluation uses two key datasets:
 
+- **STS Benchmark**: [PhilipMay/stsb_multi_mt](https://huggingface.co/datasets/PhilipMay/stsb_multi_mt) - Semantic Textual Similarity benchmark with similarity scores from 0-5
+- **Quora Question Pairs**: [Kaggle Question Pairs Dataset](https://www.kaggle.com/datasets/quora/question-pairs-dataset/data) - Binary classification task for identifying duplicate questions
+
+### Running the Evaluations
+
+The project contains three Jupyter notebooks for different experiments:
+
+#### STS Benchmark Evaluation
 ```bash
-python semantic_similarity_evaluation.py
+jupyter notebook experiment1.ipynb
 ```
+This notebook:
+- Automatically loads the STS Benchmark dataset from HuggingFace
+- Evaluates models using mean pooling strategy
+- Generates performance metrics (Pearson/Spearman correlations, MAE)
+- Creates visualization charts comparing different model architectures
 
-This will:
-- Load the STS Benchmark dataset
-- Evaluate all configured models
-- Generate performance metrics
-- Save results to CSV
-- Create visualization charts
-
-### Running Quora Question Pairs Evaluation
-
-For duplicate question detection evaluation:
-
+#### Quora Question Pairs Evaluation
 ```bash
-python quora_evaluation.py
+jupyter notebook experiment2.ipynb
 ```
+This notebook:
+- Loads the Quora Question Pairs dataset
+- Computes AUC scores for duplicate question detection
+- Measures processing time and efficiency
+- Generates comparative visualizations
+
+#### Mean Pooling Strategy Analysis
+```bash
+jupyter notebook meanpooling.ipynb
+```
+This notebook:
+- Compares different pooling strategies for embeddings
+- Analyzes the impact of pooling methods on performance
+- Provides detailed analysis of embedding extraction techniques
 
 ### Customizing Model Configuration
 
-Modify the `MODEL_CONFIGS` dictionary to add or remove models:
+Within the notebooks, modify the `MODEL_CONFIGS` dictionary to add or remove models:
 
 ```python
 MODEL_CONFIGS = {
