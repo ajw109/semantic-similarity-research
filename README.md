@@ -45,8 +45,8 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/your_username/semantic-similarity-evaluation.git
-   cd semantic-similarity-evaluation
+   git clone https://github.com/ajw109/semantic-similarity-research.git
+   cd semantic-similarity-research
    ```
 
 2. Install required packages
@@ -146,6 +146,24 @@ The framework generates comprehensive performance comparisons:
 2. gtr-t5-base: 0.8787
 3. all-MiniLM-L6-v2: 0.8681
 
+## Contributing
+
+Contributions are welcome! Here's how you can help:
+
+1. **Add new models** to the evaluation framework
+2. **Implement additional datasets** for broader evaluation
+3. **Optimize performance** and memory usage
+4. **Enhance visualizations** and reporting features
+5. **Improve documentation** and examples
+
+### Contributing Steps
+
+1. Fork the project
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
@@ -154,25 +172,26 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 AJ Woods - ajwoods@skidmore.edu
 
-Project Link: [https://github.com/your_username/semantic-similarity-evaluation](https://github.com/your_username/semantic-similarity-evaluation)
+Project Link: [https://github.com/ajw109/semantic-similarity-research](https://github.com/ajw109/semantic-similarity-research)
 
 ## Acknowledgments
 
-- [SentenceTransformers Library](https://www.sbert.net/) for pre-trained models
+- [SentenceTransformers Library](https://www.sbert.net/) for excellent pre-trained models
 - [Hugging Face](https://huggingface.co/) for transformer models and datasets
 - [STS Benchmark](http://ixa2.si.ehu.es/stswiki/index.php/STSbenchmark) for evaluation data
 - [Quora Question Pairs](https://www.kaggle.com/c/quora-question-pairs) dataset
+- Research community for semantic similarity evaluation methodologies
 
 ## Citation
 
 If you use this evaluation framework in your research, please cite:
 
 ```bibtex
-@misc{semantic-similarity-research,
+@misc{semantic-similarity-evaluation,
   title={Semantic Similarity Model Evaluation Framework},
   author={AJ Woods},
   year={2025},
   publisher={GitHub},
-  url={https://github.com/your_username/semantic-similarity-evaluation}
+  url={https://github.com/ajw109/semantic-similarity-research}
 }
 ```
