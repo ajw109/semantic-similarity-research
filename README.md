@@ -193,11 +193,10 @@ Project Link: [https://github.com/ajw109/semantic-similarity-research](https://g
 
 ## Acknowledgments
 
-- [SentenceTransformers Library](https://www.sbert.net/) for excellent pre-trained models
+- [SentenceTransformers Library](https://www.sbert.net/) for its pre-trained models
 - [Hugging Face](https://huggingface.co/) for transformer models and datasets
-- [STS Benchmark](http://ixa2.si.ehu.es/stswiki/index.php/STSbenchmark) for evaluation data
-- [Quora Question Pairs](https://www.kaggle.com/c/quora-question-pairs) dataset
-- Research community for semantic similarity evaluation methodologies
+- [STS Benchmark](http://ixa2.si.ehu.es/stswiki/index.php/STSbenchmark) for its dataset
+- [Quora Question Pairs](https://www.kaggle.com/c/quora-question-pairs) for its dataset
 
 ## Citation
 
