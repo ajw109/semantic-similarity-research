@@ -1,10 +1,10 @@
 # Semantic Similarity Model Evaluation
 
-A comprehensive evaluation framework for comparing semantic similarity performance across different transformer architectures including sentence transformers, encoder-only models, and decoder models.
+An evaluation framework for comparing semantic similarity performance across different transformer architectures including sentence transformers, encoder-only models, and decoder models.
 
 ## About The Project
 
-This project provides a systematic evaluation of various transformer models on semantic similarity tasks using two key datasets: the STS Benchmark and Quora Question Pairs. The evaluation covers three main categories of models:
+This project systematically evaluates various transformer models on semantic similarity tasks using two key datasets: the STS Benchmark and Quora Question Pairs. The evaluation covers three main categories of models:
 
 - **Sentence Transformers**: Fine-tuned models specifically designed for semantic similarity (all-MiniLM-L6-v2, all-mpnet-base-v2, gtr-t5-base)
 - **Encoder Models**: BERT-family models adapted for similarity tasks (BERT-Pro, RoBERTa-base, DistilBERT)
@@ -115,20 +115,6 @@ MODEL_CONFIGS = {
 }
 ```
 
-### Example Results
-
-The framework generates comprehensive performance comparisons:
-
-**STS Benchmark Results:**
-- **Sentence Transformers**: Pearson r: 0.83-0.88, Spearman r: 0.83-0.88
-- **Encoder Models**: Pearson r: 0.62-0.66, Spearman r: 0.65-0.68
-- **Decoder Models**: Pearson r: 0.23-0.59, Spearman r: 0.22-0.61
-
-**Quora Question Pairs Results:**
-- **Best AUC Score**: all-mpnet-base-v2 (0.8946)
-- **Fastest Processing**: DistilBERT (1.7s)
-- **Most Efficient**: Sentence transformers provide best performance-to-speed ratio
-
 ## Evaluation Metrics
 
 ### Semantic Similarity (STS Benchmark)
@@ -142,15 +128,6 @@ The framework generates comprehensive performance comparisons:
 - **Mean Cosine Similarity**: Average similarity scores
 - **Processing Time**: Inference efficiency
 
-## Results and Findings
-
-### Key Insights
-
-1. **Sentence Transformers** consistently outperform general-purpose models on similarity tasks
-2. **all-mpnet-base-v2** provides the best overall performance across both datasets
-3. **Decoder models** show limited effectiveness for similarity tasks in their base form
-4. **Processing speed** varies significantly, with DistilBERT being fastest among competitive models
-
 ### Performance Rankings
 
 **STS Benchmark (by Pearson correlation):**
@@ -162,24 +139,6 @@ The framework generates comprehensive performance comparisons:
 1. all-mpnet-base-v2: 0.8946
 2. gtr-t5-base: 0.8787
 3. all-MiniLM-L6-v2: 0.8681
-
-## Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. **Add new models** to the evaluation framework
-2. **Implement additional datasets** for broader evaluation
-3. **Optimize performance** and memory usage
-4. **Enhance visualizations** and reporting features
-5. **Improve documentation** and examples
-
-### Contributing Steps
-
-1. Fork the project
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## License
 
